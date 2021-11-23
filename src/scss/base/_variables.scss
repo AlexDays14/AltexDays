@@ -1,0 +1,21 @@
+//fuentes
+$fuente_headings: 'Poppins', sans-serif;
+$fuente_textos: 'Poppins', sans-serif;
+
+// Tamaño de Media Queries
+$telefono: 480px;
+$tablet: 769px;
+$desktop: 1024;
+
+// Colores
+$azul: #2273EB;
+$rojo: #EB4D38;
+$naranja: lighten($rojo, 7%);
+$azulFuerte: #06439E;
+$cyan: rgb(35, 163, 202);
+
+$blanco: #ebebeb;
+$gris: #6b7280;
+$grisOscuro: #4B5563;
+$negro: rgb(31, 31, 31);
+$negroClaro: lighten($negro, 10%);

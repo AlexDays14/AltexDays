@@ -1,0 +1,190 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.header{
+    background: v.$azulFuerte;
+    height: 100vh;
+    padding-top: 2rem;
+    padding-bottom: 7rem;
+    transition: 300ms;
+
+    @include m.tablet{
+        height: 100vh;
+    }
+
+    .contenido-header{
+        display: flex;
+        min-height: 100%;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo{
+            color: v.$blanco;
+            font-size: 2.9rem;
+            font-weight: 600;
+            transition: 300ms;
+
+            &:hover{
+                color: v.$rojo;
+            }
+        }
+        @media screen and (max-width:768px){
+            .menu{
+                position: fixed;
+                width: 60%;
+                top: 6.3rem;
+                right: -100%;
+                height: 100vh;
+                background: linear-gradient(to right bottom, lighten(v.$azul, 15%), rgba(255,255,255,0.3));
+                -webkit-backdrop-filter: blur(10px);
+                backdrop-filter: blur(10px);
+                padding: 2.4rem;
+                z-index: 10;
+                transition: 300ms;
+                border-top-left-radius: 1.6rem;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+
+                &.mostrar{
+                    right: 0;
+                }
+            }
+        }
+        .link{
+            margin-bottom: 2.4rem;
+            color: #fff;
+            background: linear-gradient(currentColor, currentColor);
+            background-position: 50% 100%;
+            background-repeat: no-repeat;
+            background-size: 0% 2px;
+            transition: 300ms;
+
+            &:hover{
+                color: v.$rojo;
+                background-size: 100% 2px;
+            }
+
+            @include m.tablet{
+                display: initial;
+                margin-bottom: 0;
+                margin-left: 4.8rem;
+            }
+        }
+        .toggle{
+            font-size: 2.5rem;
+            cursor: pointer;
+            color: v.$blanco;
+
+            @include m.tablet{
+                display: none;
+            }
+        }
+    }
+
+    .header-data{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @include m.tablet{
+            flex-direction: row-reverse;
+            justify-content: space-between;
+        }
+
+        .title{
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            @include m.tablet{
+                align-items: flex-start;
+            }
+            h1{
+                font-size: 4rem;
+                color: v.$blanco;
+                text-align: center;
+    
+                span{
+                    color: lighten(v.$azul, 0%);
+                }
+    
+                @include m.tablet{
+                    font-size: 5rem;
+                    text-align: initial;
+                    max-width: 100%;
+                }
+            }
+    
+            .button{
+                background-color: v.$naranja;
+                /* background-color: v.$rojo; */
+                color: v.$blanco;
+                padding: 1.5rem 1.2rem;
+                border-radius: 1.2rem;
+                transition: 300ms;
+                display: flex;
+                align-items: center;
+                font-size: 1.8rem;
+                font-weight: 500;
+    
+                &:hover{
+                    padding-right: 2rem;
+                    box-shadow: 3px 0 24px 8px v.$naranja;
+                }
+            }
+        }
+
+        .img{
+            order: -1;
+            @media screen and (max-width:768px){
+                
+                width: 30rem;
+            }
+        }
+    }
+
+    .header-social{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: initial;
+        @include m.tablet{
+            justify-content: flex-start;
+        }
+
+        span{
+            writing-mode: vertical-lr;
+            transform: rotate(180deg);
+            border-left: 1px solid v.$blanco;
+            color: v.$blanco;
+            margin-right: 2rem;
+            padding: 1.6rem .4rem;
+        }
+
+        .icon{
+            margin-right: 1.6rem;
+            width: 3.9rem;
+            height: 3.9rem;
+            font-size: 3rem;
+            color: v.$azulFuerte;
+            background-color: v.$blanco;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            transition: 300ms;
+
+            &:hover{
+                background: transparent;
+                color: v.$blanco;
+                transform: scale(1.3);
+            }
+        }
+    }
+}
