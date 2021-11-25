@@ -55,13 +55,12 @@ function scrollHeader(){
 window.addEventListener('scroll', scrollHeader)
 
 function getOS(){
-    var iOS = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
+    var userAgent = navigator.userAgent || navigator.vendor || window.opera;
 
     if(/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream){
         document.querySelector('.header').classList.add('iphone');
     }
 }
-
 function IsSafari() {
 
     var is_safari = navigator.userAgent.toLowerCase().indexOf('safari/') > -1;
@@ -70,6 +69,6 @@ function IsSafari() {
         const header = document.querySelector('.header');
         header.classList.add('iphone');
     }
+  
 }
-
 getOS();
