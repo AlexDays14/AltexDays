@@ -1,0 +1,18 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.alerta{
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    color: v.$blanco;
+    border-radius: .5rem;
+    max-width: 80%;
+    @include m.tablet{
+        text-align: center;
+    }
+
+    &.error{
+        background-color: v.$rojo;
+    }
+}

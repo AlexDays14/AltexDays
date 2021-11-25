@@ -32,7 +32,7 @@
             <span>Sígueme</span>
             <a href="#" class="icon facebook"><i class='bx bxl-facebook-circle' ></i></a>
             <a href="#" class="icon instagram"><i class='bx bxl-instagram-alt' ></i></a>
-            <a href="#" class="icon whatsapp"><i class='bx bxl-whatsapp'></i></a>
+            <a href="https://wa.me/message/A2E7JETUV6EOA1" target="_blank" class="icon whatsapp"><i class='bx bxl-whatsapp'></i></a>
         </div>
     </div>
 </header>
@@ -113,21 +113,27 @@
             <div class="contenido-contacto">
                 <h2>Envíame un Mensaje</h2>
                 <p>Es la mejor forma para empezar con tu proyecto deseado.</p>
-                <form class="formulario">
+                <?php include_once __DIR__ . "/../templates/alertas.php" ?>
+                <form class="formulario" method="POST" action="">
                     <div class="campo">
-                        <input type="text" id="nombre" name="nombre" placeholder="Tu Nombre">
+                        <input type="text" id="nombre" name="nombre" placeholder="Tu Nombre" value="<?php echo $contacto->nombre; ?>">
                     </div>
                     <div class="campo">
-                        <input type="email" id="email" name="email" placeholder="Tu Email">
+                        <input type="email" id="email" name="email" placeholder="Tu Email" value="<?php echo $contacto->email; ?>">
                     </div>
                     <div class="campo">
-                        <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Tu Mensaje"></textarea>
+                        <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Tu Mensaje"><?php echo $contacto->mensaje; ?></textarea>
                     </div>
-                    <input href="#" class="button" value="Enviar"/>
+                    <input type="submit" class="button" value="Enviar">
                 </form>
             </div>
 
-            <h3 class="tagline">¡Gracias! <br> Te Contestaré lo Más Pronto Posible</h3>
+            <h3 class="tagline">O Contáctame Por:</h3>
+
+            <div class="contacto-whatsapp">
+                <a class="num" href="https://wa.me/message/A2E7JETUV6EOA1" target="_blank"><span>+526567509829</span></a>
+                <a href="https://wa.me/message/A2E7JETUV6EOA1" target="_blank" class="icon whatsapp"><i class='bx bxl-whatsapp'></i></a>
+            </div>
         </div>
     </section>
 </main>

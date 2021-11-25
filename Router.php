@@ -12,7 +12,7 @@ class Router{
     }
 
     public function post($url, $fn){
-        $this->getRoutes[$url] = $fn;
+        $this->postRoutes[$url] = $fn;
     }
 
     public function comprobarRutas(){
