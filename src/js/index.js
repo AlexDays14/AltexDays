@@ -53,3 +53,11 @@ function scrollHeader(){
     if(this.scrollY >= 200) nav.classList.add('scroll-header'); else nav.classList.remove('scroll-header')
 }
 window.addEventListener('scroll', scrollHeader)
+
+function getOS(){
+    var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+    if(/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream){
+        document.querySelector('.header').classList.add('iphone');
+    }
+}

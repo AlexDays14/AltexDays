@@ -8,6 +8,10 @@
     padding-bottom: 7rem;
     transition: 300ms;
 
+    &.iphone{
+        height: 130vh;
+    }
+
     @include m.tablet{
         height: 100vh;
     }
