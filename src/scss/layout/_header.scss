@@ -3,13 +3,13 @@
 
 .header{
     background: v.$azulFuerte;
-    height: 120vh;
+    height: 110vh;
     padding-top: 2rem;
     padding-bottom: 7rem;
     transition: 300ms;
 
     &.iphone{
-        height: 130vh;
+        height: 125vh;
     }
 
     @include m.tablet{
