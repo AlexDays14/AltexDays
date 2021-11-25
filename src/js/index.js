@@ -59,6 +59,8 @@ function getOS(){
 
     if(/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream){
         document.querySelector('.header').classList.add('iphone');
+    } else{
+        document.querySelector('.header').classList.remove('iphone');
     }
 }
 function IsSafari() {
