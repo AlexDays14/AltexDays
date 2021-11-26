@@ -53,24 +53,3 @@ function scrollHeader(){
     if(this.scrollY >= 200) nav.classList.add('scroll-header'); else nav.classList.remove('scroll-header')
 }
 window.addEventListener('scroll', scrollHeader)
-
-function getOS(){
-    var userAgent = navigator.userAgent || navigator.vendor || window.opera;
-
-    if(/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream){
-        document.querySelector('.header').classList.add('iphone');
-    } else{
-        document.querySelector('.header').classList.remove('iphone');
-    }
-}
-function IsSafari() {
-
-    var is_safari = navigator.userAgent.toLowerCase().indexOf('safari/') > -1;
-
-    if(is_safari){
-        const header = document.querySelector('.header');
-        header.classList.add('iphone');
-    }
-  
-}
-getOS();

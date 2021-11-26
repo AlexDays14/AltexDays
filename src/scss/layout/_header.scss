@@ -3,7 +3,7 @@
 
 .header{
     background: v.$azulFuerte;
-    height: 110vh;
+    height: 130vh;
     padding-top: 2rem;
     padding-bottom: 7rem;
     transition: 300ms;
@@ -148,7 +148,7 @@
             order: -1;
             @media screen and (max-width:768px){
                 
-                width: 30rem;
+                width: 40rem;
             }
         }
     }
