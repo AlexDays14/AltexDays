@@ -20,7 +20,7 @@
 
         <div class="header-data">
             <div class="title">
-                <h1>Bienvenido a <span>Altex</span>, <br> Haz Realidad Tu Proyecto</h1>
+                <h1>Bienvenido a <span>Altex</span>, <br> az Realidad Tu Proyecto</h1>
                 <a href="#incluye" class="button">Empieza Ya <i class='bx bx-right-arrow-alt icon'></i></a>
             </div>
             <div class="img">
