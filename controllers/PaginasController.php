@@ -36,4 +36,9 @@ class PaginasController{
             'principal' => '<meta name="google-site-verification" content="I9ZegWxn8AvrapzqumqZLd-_Na8QSw2sUx7_JAIvR8k" />'
         ]);
     }
+
+    public static function sitemap(Router $router){
+
+        $router->xml('sitemap/index');
+    }
 }

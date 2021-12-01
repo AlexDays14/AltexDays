@@ -31,4 +31,6 @@ $router->post('/dashboard', [DashboardController::class, 'index']);
 $router->get('/admin', [AdminController::class, 'index']);
 $router->post('/admin', [AdminController::class, 'index']);
 
+$router->get('/sitemap', [PaginasController::class, 'sitemap']);
+
 $router->comprobarRutas();
