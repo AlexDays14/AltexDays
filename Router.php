@@ -21,7 +21,8 @@ class Router{
         $auth = $_SESSION['login'] ?? null;
 
         $rutasProtegidas = [
-
+            '/dashboard',
+            '/admin'
         ];
         $rutasInvitados = [
 

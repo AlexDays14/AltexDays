@@ -7,9 +7,10 @@
     padding: 1rem;
     color: v.$blanco;
     border-radius: .5rem;
-    max-width: 80%;
+    max-width: 100%;
     @include m.tablet{
         text-align: center;
+        max-width: 80%;
     }
 
     &.error{

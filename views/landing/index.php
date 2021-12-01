@@ -11,6 +11,7 @@
                 <a href="#beneficios" class="link">Beneficios</a>
                 <a href="#incluye" class="link">¿Qué Incluye?</a>
                 <a href="#contacto" class="link">Contacto</a>
+                <a href="/login" class="link">Login</a>
             </div>
 
             <div class="toggle" id="toggle">
