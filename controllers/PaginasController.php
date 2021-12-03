@@ -33,7 +33,8 @@ class PaginasController{
         $router->render('landing/index', [
             'alertas' => $alertas,
             'contacto' => $contacto,
-            'principal' => '<meta name="google-site-verification" content="Qcnzf6Z7m2mec4X2OpwfyHcOssv2O0-_mysREzgIwj4" />'
+            'principal' => '<meta name="google-site-verification" content="xvRqnYO5l6U-oH4I7ARA1OWbptYjl-DJ6Nokl7m9WTA" />
+            <meta name="google-site-verification" content="Qcnzf6Z7m2mec4X2OpwfyHcOssv2O0-_mysREzgIwj4" />'
         ]);
     }
 
