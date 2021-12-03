@@ -23,6 +23,7 @@
 
         <div class="acciones">
             <a href="/crear">¿Aún no tienes una cuenta? Crea Una</a>
+            <a href="/">Volver a Inicio</a>
             <a href="/olvide">¿Olvidaste tu password?</a>
         </div>
     </div>

@@ -40,6 +40,7 @@ class LoginController{
                 }
             }
         }
+        /* debuguear(Usuario::all()); */
 
         $alertas = Usuario::getAlertas();
 
@@ -49,7 +50,8 @@ class LoginController{
     }
 
     public static function logout(){
-
+        $_SESSION = [];
+        header('location: /');
     }
 
     public static function crear(Router $router){

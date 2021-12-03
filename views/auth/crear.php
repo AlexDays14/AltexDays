@@ -32,7 +32,8 @@
         </form>
 
         <div class="acciones">
-            <a href="/">¿Ya tienes una cuenta? Inicia Sesión</a>
+            <a href="/login">¿Ya tienes una cuenta? Inicia Sesión</a>
+            <a href="/">Volver a Inicio</a>
             <a href="/olvide">¿Olvidaste tu password?</a>
         </div>
     </div>

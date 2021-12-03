@@ -1,0 +1,15 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.dashboard{
+    display: none;
+    min-height: 100vh;
+
+    @include m.tablet{
+        display: flex;
+    }
+
+    .principal{
+        flex: 1;
+    }
+}

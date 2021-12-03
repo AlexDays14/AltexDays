@@ -11,7 +11,12 @@
                 <a href="#beneficios" class="link">Beneficios</a>
                 <a href="#incluye" class="link">¿Qué Incluye?</a>
                 <a href="#contacto" class="link">Contacto</a>
-                <a href="/login" class="link">Login</a>
+                <?php if(!isset($_SESSION['login'])){?>
+                    <a href="/login" class="link">Login</a>
+                <?php }else{ ?>
+                    <a href="/dashboard" class="link">Dashboard</a>
+                    <a href="/logout" class="logout">Logout</a>
+                <?php } ?>
             </div>
 
             <div class="toggle" id="toggle">
