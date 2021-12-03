@@ -30,6 +30,7 @@ class Router{
 
         $currentUrl = explode('?', $_SERVER['REQUEST_URI'], 2) ?? '/';
         $method = $_SERVER['REQUEST_METHOD'];
+        debuguear($_SERVER['HTTPS']);
 
         if ($method === 'GET') {
             $fn = $this->getRoutes[$currentUrl[0]] ?? null;
