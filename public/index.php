@@ -4,6 +4,7 @@ require_once __DIR__ . '/../includes/app.php';
 
 use MVC\Router;
 use Controllers\AdminController;
+use Controllers\APIController;
 use Controllers\DashboardController;
 use Controllers\LoginController;
 use Controllers\PaginasController;
@@ -32,5 +33,9 @@ $router->get('/admin', [AdminController::class, 'index']);
 $router->post('/admin', [AdminController::class, 'index']);
 
 $router->get('/sitemap', [PaginasController::class, 'sitemap']);
+
+$router->get('/api/index', [APIController::class, 'APIIndexing']);
+$router->post('/api/index', [APIController::class, 'APIIndexing']);
+$router->get('/api/getRequest', [APIController::class, 'getRequest']);
 
 $router->comprobarRutas();

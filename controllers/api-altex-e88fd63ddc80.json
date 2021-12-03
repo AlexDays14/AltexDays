@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "api-altex",
+  "private_key_id": "e88fd63ddc8022c8a1af0b65adc088af402bd170",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC/Oz0U8l+gCYQC\neYQvOlbxW/bb6eIwg/KFKhItNRhgwNHrudqVdvQbsYzqQnZliwXdExiAnMkDy4BH\nbzCYKzDmqeLDUuzyWLlAgJ3U7L+0vXYZoZ5K+SbwSxzul6ii+wCLB2K36I67yTd7\nErzaX4FSMmWCex6sICUHGYHY9MfivyE6bb0Xd2COA3br78uW+1zCnptEnBc9h90K\nQbZWtEExkdZ1Jb443LSDbcIb69HpA8KyQfgMiNv8PNCsIgl9NsGYrr77fCs+tM1a\ntKyejmDqeLPyWq2KuSegg99AHW+by+ItwEJM/+FKa57JpDRH9N/V99FNP3Ti2Edr\nkvbCB+YTAgMBAAECggEACIL1fAoxsWjbBFUuSf/ZwNJsEWu+kpQ85ipyNqrnU98h\nONHD5eUuhlEHyaF9rZVbhHSGIatY0x9qrUNIsW0ytwGWw0TcoQjL7hALdl+3RK8u\nI4PrDME8N3PQbNo5Ok/bvVRt02u5dqhFHOg/maSol+UAWadrPRQNMdyzx9lVUEVH\nsfWPqZeDJk/KYjJt1LQhZxJUg2i89I+DHAHKXxPQC6XFWayX2tLig9c6Ow5wWc2n\n+0LQQlllRBHHBe3J+AfNfA5AzvK9lMfcez/RGTsbjyfcuGFP0oXM7D7aZ3Dl2/fz\nlRQRBDSnhm6IR2tyxyEVLCZ4ttd513Yn1E7njrlz+QKBgQD8hlweAo6JUsof8SEg\nCenwF6m3+s5i1Qu5Byw3mWxYJGusL6hgl9r+qPcXoE0L4B7QBKN64ZbxJU+3WiVZ\nE0GxyciHsMAnVHiGD1XkqqOpvJ+8E7/KEkWbSceD2fUIfHrdzQlDTgwxnTfUqT2V\n24hqKQdzhBB+mVFOVlCWc0aqZQKBgQDB3PFyOOBZv3xUFa3B1K9MRB+qAMOUhkhj\n8c3CxBwxw+Jp3AFmdMw7450C6+ViwV5AywmDHwosW0Q846/+oAnQ5U0sCnHl8U4o\np+6t4ivD4aI3TL4mn1zd3XgcAm8zLebHB6r25eGLEo/J9ItJKBHdCbvlnO9c4sJG\nL0KQQgdLFwKBgQDO0JOdGGb4XM+hfXCttrDbq+WaAlUJaIajURaLqqGrRpjQem+i\nPHxk2KkVtnmjYjiaEVJ6j0t50B8LgU7ZNwY0v5f2WXHmRC45TVIBZyeHGi6QcHRA\n4NoVJkW63MTr4FcYVJZjgwZFlAdnqfwAQb3lhBjQKLcBmDuYtuRlc5/KaQKBgBoy\nWQ4uUWLPVWWnaEuBCg8sRXsbj1JKsw2OZ1eiWI0BA196s1W9Arw1DcqPRfgKWUo4\nJZjqYN2Nl7MCsY2e4rSvx7Xj03BXI1CrIL2uimt12g3O+QMPFeWFP+3JBm3MDhtn\nFds3RTsdzwBjY08HcyKDZjio9E+A9O+3Ay+rPIERAoGBAKPPO9ZOrrrmTPnX2FHF\nykmuH3ZOFlQgf67Vf0QjKpZimz3z39AGTyCluNYDPr33QW/bfAmqRCJZ8IM07Jm2\npXrpGqmq4mDA5/bZPBOblvsIYV8zC5vAYENv+0Ld6kPHCrqeXGhihQ+0mzhUAGq2\nnSVRZk8v6ngB6H4UmW09VVKF\n-----END PRIVATE KEY-----\n",
+  "client_email": "altexdays-api@api-altex.iam.gserviceaccount.com",
+  "client_id": "108431282343537203094",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/altexdays-api%40api-altex.iam.gserviceaccount.com"
+}
