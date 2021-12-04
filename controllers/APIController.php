@@ -25,6 +25,7 @@ class APIController{
 
         $response = $httpClient->post($endpoint, [ 'body' => $content ]);
         $status_code = $response->getStatusCode();
+        echo $status_code;
 
     }
 
