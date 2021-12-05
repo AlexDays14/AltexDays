@@ -183,6 +183,5 @@
 </footer>
 
 <?php $script = '
-<script src="https://unpkg.com/scrollreveal"></script>
 <script src="/../build/js/index.js"></script>
 ' ?>
