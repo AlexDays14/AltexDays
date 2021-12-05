@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="canonical" href="https://altexdays.herokuapp.com">
-    <title><?php $titulo ?? 'Altex'; ?></title>
-    <meta name="robots" content="<?php $robots ?? ''; ?>">
-    <meta name="description" content="<?php $descripcion ?? ''; ?>">
+    <title><?php echo $titulo ?? 'Altex'; ?></title>
+    <meta name="robots" content="<?php echo $robots ?? ''; ?>">
+    <meta name="description" content="<?php echo $descripcion ?? ''; ?>">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="<?php $titulo ?? 'Altex'; ?>">
-    <meta property="og:description" content="<?php $descripcion ?? ''; ?>">
+    <meta property="og:title" content="<?php echo $titulo ?? 'Altex'; ?>">
+    <meta property="og:description" content="<?php echo $descripcion ?? ''; ?>">
     <meta property="og:image" content="/build/img/altex.png">
     <meta property="og:url" content="permalink">
     <link rel="preconnect" href="https://fonts.googleapis.com">
