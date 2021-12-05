@@ -1,22 +1,26 @@
-<div class="dashboard">
-    <aside class="sidebar">
-        <div class="contenedor-sidebar">
-            <h2>Altex</h2>
-        </div>
+<?php include_once __DIR__ . "/header-dashboard.php"; ?>
 
-        <nav class="sidebar-nav">
-            <a class="<?php echo ($titulo === 'Proyectos') ? 'activo' : ''; ?>" href="/dashboard">Proyectos</a>
-            <a class="<?php echo ($titulo === 'Mensajes') ? 'activo' : ''; ?>" href="/contactos">Mensajes</a>
-        </nav>
-    </aside>
+        <ul class="listado-proyectos">
+            
+                <li class="proyecto">
+                    <a href="/proyecto?url=<?php /* echo $proyecto->url;  */?>">
+                    dfdfdfd
+                        
+                    </a>
+                </li>
+                <li class="proyecto">
+                    <a href="/proyecto?url=<?php /* echo $proyecto->url;  */?>">
+                    dfdfdfd
+                        
+                    </a>
+                </li>
+                <li class="proyecto">
+                    <a href="/proyecto?url=<?php /* echo $proyecto->url;  */?>">
+                    dfdfdfd
+                        
+                    </a>
+                </li>
+        
+        </ul>
 
-    <div class="principal">
-        <div class="barra">
-            <p>Hola: <span><?php echo $_SESSION['nombre']; ?></span></p>
-            <a href="/logout" class="cerrar-sesion">Cerrar Sesión</a>
-        </div>
-
-        <div class="contenido">
-            <h2 class="nombre-pagina"><?php echo $titulo; ?></h2>
-    </div>
-</div>
+<?php include_once __DIR__ . "/footer-dashboard.php"; ?>

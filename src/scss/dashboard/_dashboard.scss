@@ -2,7 +2,6 @@
 @use 'base/mixins' as m;
 
 .dashboard{
-    display: none;
     min-height: 100vh;
 
     @include m.tablet{
@@ -10,6 +9,50 @@
     }
 
     .principal{
-        flex: 1;
+        @include m.tablet{
+            flex: 1;
+        }
+        
+    }
+
+    .contenido{
+        padding: 2rem;
+
+        .nombre-pagina{
+            font-size: 3.5rem;
+            text-align: center;
+        }
+    }
+
+    .contenedor-sm{
+        max-width: 70rem;
+    }
+
+    .formulario{
+        margin-top: 2.5rem;
+
+        input:not([type="submit"]){
+            background-color: v.$blanco;
+        }
+
+        input[type="submit"]{
+            @include m.boton(v.$azul, v.$blanco);
+            padding: 1rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 1.4rem;
+        }
+
+    }
+
+    .enlace{
+        color: v.$azul;
+        font-weight: bold;
+        font-size: 1.7rem;
+        transition: all 300ms;
+
+        &:hover{
+            color: darken(v.$azul, 20%);
+        }
     }
 }
