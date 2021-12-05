@@ -31,6 +31,9 @@ class PaginasController{
         }
 
         $router->render('landing/index', [
+            'titulo' => 'Altex',
+            'descripcion' => 'Creamos tu página web y ayudamos a estar en internet.',
+            'robots' => 'index, follow',
             'alertas' => $alertas,
             'contacto' => $contacto,
             'principal' => '<meta name="google-site-verification" content="xvRqnYO5l6U-oH4I7ARA1OWbptYjl-DJ6Nokl7m9WTA" />
