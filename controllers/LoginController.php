@@ -45,6 +45,9 @@ class LoginController{
         $alertas = Usuario::getAlertas();
 
         $router->render('auth/login', [
+            'titulo' => 'Altex | Iniciar Sesión',
+            'descripcion' => 'Inicia Sesión',
+            'robots' => 'index, follow',
             'alertas' => $alertas
         ]);
     }
