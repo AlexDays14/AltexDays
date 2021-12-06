@@ -1,0 +1,103 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.incluye{
+    padding-bottom: 4rem;
+
+    h2{
+        text-align: center;
+        color: v.$azulFuerte;
+        font-size: 5rem;
+    }
+
+    .contenedor-incluye{
+        margin-top: 3rem;
+        @include m.grid(1, 2rem);
+        @include m.tablet{
+            @include m.grid(2,3rem);
+        }
+
+        .card{
+            padding: 4rem 1rem;
+            text-align: center;
+            min-height: 30rem;
+            box-shadow: 3px 0 20px lighten(v.$gris, 10%);
+            margin: 0 4rem;
+            margin-bottom: 2rem;
+            border-radius: 1rem;
+            border: 2px solid v.$azulFuerte;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: 300ms;
+            &:hover{
+                box-shadow: 3px 0 20px lighten(v.$negro, 10%);
+            }
+            @include m.tablet{
+                margin: 0 0 2rem 0;
+            }
+
+            .button{
+                background-color: v.$naranja;
+                text-align: center;
+                /* background-color: v.$rojo; */
+                color: v.$blanco;
+                padding: 1.5rem 1.2rem;
+                border-radius: 1.2rem;
+                transition: 300ms;
+                font-size: 1.8rem;
+                font-weight: 500;
+                margin-top: 2rem;
+    
+                &:hover{
+                    padding-right: 2rem;
+                    box-shadow: 3px 0 24px 8px v.$naranja;
+                }
+                @include m.tablet{
+                    align-self: center;
+                    padding: 1.5rem 3rem;
+
+                    &:hover{
+                        padding-right: 4rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .card-data{
+
+        h3{
+            color: v.$naranja;
+        }
+
+        p{
+            font-weight: 500;
+        }
+    }
+
+    .card-descripcion{
+        align-self: center;
+        ul{
+            text-align: initial;
+            color: darken(v.$azulFuerte, 9%);
+
+            li{
+                margin-bottom: 0.7rem;
+                position: relative;
+
+                &::before{
+                    content: '';
+                    width: 1rem;
+                    height: 1rem;
+                    position: absolute;
+                    top: 0.38rem;
+                    left: -2rem;
+                    background-color: v.$naranja;
+                    border-radius: 40%;
+                    box-shadow: 0px 0 10px v.$naranja;
+                }
+            }
+        }
+    }
+}
