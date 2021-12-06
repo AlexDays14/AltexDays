@@ -32,7 +32,6 @@ function css( done ) {
         .pipe( postcss([ autoprefixer(), cssnano() ]) )
         .pipe(sourcemaps.write('.'))
         .pipe( dest('public/build/css') ) // Almacenarla en el disco duro
-    done();
 }
 
 function imagenes(done) {
