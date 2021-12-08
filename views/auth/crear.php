@@ -33,8 +33,11 @@
 
         <div class="acciones">
             <a href="/login">¿Ya tienes una cuenta? Inicia Sesión</a>
-            <a href="/">Volver a Inicio</a>
             <a href="/olvide">¿Olvidaste tu password?</a>
         </div>
     </div>
 </div>
+
+<?php $script = '
+<script src="/../build/js/index.js"></script>
+' ?>

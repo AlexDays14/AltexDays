@@ -8,14 +8,15 @@
             <a href="#" class="logo">Altex</a>
 
             <div class="menu" id="menu">
-                <a href="#beneficios" class="link">Beneficios</a>
                 <a href="#incluye" class="link">¿Qué Incluye?</a>
                 <a href="#contacto" class="link">Contacto</a>
+                <a href="/portafolio" class="link">Portafolio</a>
+                <a href="/servicios" class="link">Servicios</a>
                 <?php if(!isset($_SESSION['login'])){?>
-                    <a href="/login" class="link">Login</a>
+                    <a href="/login" class="log">Login</a>
                 <?php }else{ ?>
                     <a href="/dashboard" class="link">Dashboard</a>
-                    <a href="/logout" class="logout">Logout</a>
+                    <a href="/logout" class="log">Logout</a>
                 <?php } ?>
             </div>
 
@@ -27,7 +28,7 @@
         <div class="header-data">
             <div class="title">
                 <h1>Bienvenido a <span>Altex</span>, <br> Haz Realidad Tu Proyecto</h1>
-                <a href="#incluye" class="button">Empieza Ya <i class='bx bx-right-arrow-alt icon'></i></a>
+                <a href="#beneficios" class="button">Empieza Ya <i class='bx bx-right-arrow-alt icon'></i></a>
             </div>
             <div class="img">
                 <img src="/../build/img/altex.png" alt="">

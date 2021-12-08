@@ -1,0 +1,144 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.contacto{
+    padding: 4rem 0 2.4rem 0;
+    background: v.$azulFuerte;
+    @include m.tablet{
+        background: none;
+    }
+
+    .contenedor-contacto{
+        @include m.grid(1, 2.4rem);
+        h2,
+        p{
+            text-align: center;
+            color: v.$blanco;
+        }
+
+        p{
+            margin-bottom: 3.2rem;
+        }
+        @include m.tablet{
+            background-color: v.$azulFuerte;
+            border-radius: 1.5rem;
+            padding-top: 3rem;
+            padding-bottom: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+    }
+
+    .contenido-contacto{
+        flex: .8;
+        .formulario{
+            background: v.$blanco;
+            display: flex;
+            flex-direction: column;
+            padding: 1rem;
+            padding-top: 3rem;
+            border-radius: 1rem;
+            @include m.tablet{
+                max-width: 80%;
+                margin: 0 auto;
+            }
+
+            input[type="text"],
+            input[type="email"]{
+                width: 100%;
+                border: none;
+                outline: none;
+                background-color: #fff;
+                font-size: 1.6rem;
+                margin-bottom: 2rem;
+                border-radius: 1rem;
+                padding: 1rem 2rem;
+            }
+
+            textarea{
+                width: 100%;
+                border: none;
+                outline: none;
+                background-color: #fff;
+                border-radius: 1rem;
+                padding: 1rem 2rem;
+            }
+        }
+
+        .button{
+            margin-top: 3rem;
+            background-color: v.$naranja;
+            /* background-color: v.$rojo; */
+            color: v.$blanco;
+            padding: 1.5rem 1.2rem;
+            border-radius: 1.2rem;
+            transition: 300ms;
+            font-size: 1.8rem;
+            font-weight: 500;
+            text-align: center;
+            border: none;
+            outline: none;
+            cursor: pointer;
+
+            &:hover{
+                padding-right: 2rem;
+                box-shadow: 3px 0 24px 8px v.$naranja;
+            }
+        }
+    }
+
+    .tagline{
+        color: v.$blanco;
+        font-size: 2.5rem;
+        flex: .2;
+        margin: 0;
+        margin-top: 1rem;
+
+        @include m.tablet{
+        }
+    }
+
+    .contacto-whatsapp{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2rem;
+        align-items: center;
+        gap: 1rem;
+
+        span{
+            font-size: 1.8rem;
+            color: v.$blanco;
+            transition: 300ms;
+            background: linear-gradient(currentColor, currentColor);
+            background-position: 50% 100%;
+            background-repeat: no-repeat;
+            background-size: 0% 2px;
+
+            &:hover{
+                color: v.$rojo;
+                background-size: 100% 2px;
+            }
+        }
+
+        .icon{
+            margin-right: 0;
+            width: 5rem;
+            height: 5rem;
+            font-size: 4rem;
+            color: v.$blanco;
+            background-color: #25D366;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            transition: 300ms;
+    
+            &:hover{
+                background: transparent;
+                color: v.$blanco;
+                transform: scale(1.3);
+            }
+        }
+    }
+}

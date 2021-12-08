@@ -1,0 +1,87 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.log{
+    background-color: v.$rojo;
+    padding: 1rem 2.2rem;
+    border-radius: 0.5rem;
+    margin-bottom: 2.4rem;
+    color: #fff;
+    transition: 300ms;
+    font-size: 1.8rem;
+    width: 100%;
+    text-align: center;
+
+    &:hover{
+        background-color: darken(v.$rojo, 5%);
+    }
+
+    @include m.tablet{
+        display: initial;
+        margin-bottom: 0;
+        margin-left: 4.8rem;
+        width: initial;
+    }
+}
+.auth{
+    min-height: 90vh;
+    background-color: v.$azulFuerte;
+    padding-bottom: 3rem;
+
+    .contenedor-sm{
+        width: 95%;
+
+        @include m.tablet{
+            width: 100%;
+        }
+    }
+
+    .altex{
+        color: v.$blanco;
+        text-align: center;
+        font-size: 10rem;
+        font-weight: 700;
+        @include m.tablet{
+            font-size: 15rem;
+        }
+    }
+
+    .slogan{
+        font-size: 3rem;
+        color: v.$blanco;
+
+        @include m.tablet{
+            font-size: 5rem;
+        }
+    }
+
+    .descripcion-pagina{
+        color: v.$naranja;
+        font-weight: 700;
+    }
+
+    .boton{
+        display: inline-block;
+        cursor: pointer;
+        border: none;
+        outline: none;
+        background-color: v.$naranja;
+        color: v.$blanco;
+        padding: 1.5rem 1.2rem;
+        border-radius: 1.2rem;
+        transition: 300ms;
+        font-size: 1.8rem;
+        font-weight: 500;
+        width: 100%;
+        text-align: center;
+
+        &:hover{
+            padding-right: 2rem;
+            box-shadow: 3px 0 24px 8px v.$naranja;
+        }
+
+        @include m.tablet{
+            width: auto;
+        }
+    }
+}

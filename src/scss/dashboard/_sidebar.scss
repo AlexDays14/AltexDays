@@ -1,0 +1,68 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.sidebar{
+    height: 100vh;
+    padding: 2rem 2.5rem;
+    @include m.tablet{
+        background-color: v.$azul;
+    }
+
+    .contenedor-sidebar{
+
+        h2{
+            text-align: center;
+            color: v.$blanco;
+            font-weight: 700;
+            font-size: 6rem;
+            margin: 0;
+            min-width: 20rem;
+        }
+    }
+
+    .menu{
+        @media screen and (max-width:768px){
+            position: fixed;
+            width: 60%;
+            top: 6.3rem;
+            right: 0;
+            height: 100vh;
+            background-color: v.$azul;
+            padding: 2.4rem;
+            z-index: 10;
+            transition: 300ms;
+            border-top-left-radius: 1.6rem;
+            display: flex;
+            flex-direction: column;
+            
+            -webkit-transform: translateX(100%);
+            transform: translateX(0);
+        }
+        
+    
+        &.mostrar{
+            -webkit-transform: translateX(0);
+            transform: translateX(0);
+        }
+        @include m.tablet{
+            margin-top: 4.5rem;
+        }
+    
+        a{
+            margin-bottom: 2.1rem;
+            color: #fff;
+            /* background: linear-gradient(currentColor, currentColor);
+            background-position: 50% 100%;
+            background-repeat: no-repeat;
+            background-size: 100% 2px; */
+            border-radius: .5rem;
+            padding: 0.7rem;
+            transition: 200ms;
+            display: block;
+    
+            &:hover, &.activo{
+                background-color: v.$rojo;
+            }
+        }
+    }
+}

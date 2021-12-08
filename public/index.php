@@ -15,6 +15,10 @@ $router = new Router();
 $router->get('/', [PaginasController::class, 'index']);
 $router->post('/', [PaginasController::class, 'index']);
 
+$router->get('/portafolio', [PaginasController::class, 'portafolio']);
+
+$router->get('/servicios', [PaginasController::class, 'servicios']);
+
 // Auth
 $router->get('/login', [LoginController::class, 'login']);
 $router->post('/login', [LoginController::class, 'login']);

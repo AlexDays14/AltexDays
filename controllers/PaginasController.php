@@ -41,6 +41,20 @@ class PaginasController{
         ]);
     }
 
+    public static function portafolio(Router $router){
+
+        $router->render('landing/portafolio', [
+            'home' => false
+        ]);
+    }
+
+    public static function servicios(Router $router){
+
+        $router->render('landing/servicios', [
+            'home' => false
+        ]);
+    }
+
     public static function sitemap(Router $router){
 
         $router->xml('sitemap/index');

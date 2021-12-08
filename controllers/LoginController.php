@@ -48,7 +48,8 @@ class LoginController{
             'titulo' => 'Altex | Iniciar Sesión',
             'descripcion' => 'Inicia Sesión',
             'robots' => 'index, follow',
-            'alertas' => $alertas
+            'alertas' => $alertas,
+            'home' => false
         ]);
     }
 
@@ -87,7 +88,8 @@ class LoginController{
 
         $router->render('auth/crear', [
             'alertas' => $alertas,
-            'usuario' => $usuario
+            'usuario' => $usuario,
+            'home' => false
         ]);
     }
 }
