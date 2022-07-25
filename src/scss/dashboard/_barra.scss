@@ -2,6 +2,16 @@
 @use 'base/mixins' as m;
 
 .barra{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 2rem;
+
+    @media screen and (max-width:768px){
+        .cerrar-sesion{
+            display: none;
+        }
+    }
 
     @include m.tablet{
         background-color: #fff;
@@ -10,11 +20,25 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        .cerrar-sesion{
+            background-color: v.$azul;
+            color: v.$blanco;
+            text-decoration: none;
+            font-size: 1.6rem;
+            padding: 1rem;
+            border-radius: 0.7rem;
+            transition: 200ms;
+    
+            &:hover{
+                background-color: darken(v.$azul, 10%);
+            }
+        }
     }
 
     p{
         margin: 0;
-        font-size: 1.6rem;
+        font-size: 1.7rem;
         font-weight: 700;
 
         span{
@@ -23,17 +47,4 @@
         }
     }
 
-    .cerrar-sesion{
-        background-color: v.$azul;
-        color: v.$blanco;
-        text-decoration: none;
-        font-size: 1.6rem;
-        padding: 1rem;
-        border-radius: 0.7rem;
-        transition: 200ms;
-
-        &:hover{
-            background-color: darken(v.$azul, 10%);
-        }
-    }
 }

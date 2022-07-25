@@ -48,3 +48,34 @@ ul{
     margin-left: 2.4rem;
     margin-right: 2.4rem;
 }
+.text-center{
+    text-align: center;
+}
+.proximamente{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+
+    h2{
+        color: v.$azul;
+        font-size: 3rem;
+        @include m.tablet{
+            font-size: 5rem;
+        }
+    }
+}
+.servicios{
+    font-size: 3rem;
+    text-align: center;
+    @include m.tablet{
+        font-size: 3rem;
+    }
+}
+.portafolio{
+    font-size: 3rem;
+    text-align: center;
+    @include m.tablet{
+        font-size: 3rem;
+    }
+}

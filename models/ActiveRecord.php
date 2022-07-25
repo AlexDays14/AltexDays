@@ -92,7 +92,8 @@ class ActiveRecord {
         $query .= join(', ', array_keys($atributos));
         $query .= " ) VALUES ('"; 
         $query .= join("', '", array_values($atributos));
-        $query .= " ') ";
+        $query .= "') ";
+        /* debuguear($query); */
 
         // Resultado de la consulta
         $resultado = self::$db->query($query);

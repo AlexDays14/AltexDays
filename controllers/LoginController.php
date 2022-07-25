@@ -32,7 +32,12 @@ class LoginController{
                         $_SESSION['login'] = true;
 
                         // Redireccionar
-                        header('location: /dashboard');
+                        if($usuario->admin == 1) {
+                            $_SESSION['admin'] = true;
+                            header('location: /admin');
+                        } else {
+                            header('location: /dashboard');
+                        }
 
                     }else{
                         Usuario::setAlerta('error', 'Password Incorrecto');

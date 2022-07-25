@@ -42,9 +42,9 @@
                         <a href="/" class="link">Inicio</a>
                         <a href="/portafolio" class="link">Portafolio</a>
                         <a href="/servicios" class="link">Servicios</a>
-                        <?php if(!isset($_SESSION['login'])){?>
+                        <?php if(!isset($_SESSION['login']) && $titulo !== 'Altex | Iniciar Sesión'){?>
                             <a href="/login" class="log">Login</a>
-                        <?php }else{ ?>
+                        <?php }else if($titulo !== 'Altex | Iniciar Sesión'){ ?>
                             <a href="/dashboard" class="link">Dashboard</a>
                             <a href="/logout" class="log">Logout</a>
                         <?php } ?>

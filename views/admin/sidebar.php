@@ -8,8 +8,8 @@
     </div>
 
     <nav class="menu" id="menu">
-        <a class="<?php echo ($titulo === 'Mis Proyectos') ? 'activo' : ''; ?>" href="/dashboard">Proyectos</a>
-        <a class="<?php echo ($titulo === 'Mensajes') ? 'activo' : ''; ?>" href="/contactos">Mensajes</a>
+        <a class="<?php echo ($titulo === 'Admin') ? 'activo' : ''; ?>" href="/admin">Proyectos</a>
+        <a class="<?php echo ($titulo === 'Crear Proyecto') ? 'activo' : ''; ?>" href="/admin/crear-proyecto">Crear Proyecto</a>
         <a class="cerrar-sesion" href="/logout">Cerrar Sesión</a>
     </nav>
 </aside>

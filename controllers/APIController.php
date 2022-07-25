@@ -1,8 +1,61 @@
 <?php
 
 namespace Controllers;
+
 use Google\Client;
+use Model\Avance;
+use Model\Proyecto;
+
 class APIController{
+
+    public static function index(){
+
+        $slug = $_GET['slug'];
+
+        if(!$slug) header('location: /dashboard');
+
+        $proyecto = Proyecto::where('slug', $slug);
+        $proyectoId = $proyecto->id;
+
+        $avances = Avance::belongsTo('proyectoId', $proyectoId);
+        
+        echo json_encode([
+            'avances' => $avances
+        ]);
+    }
+
+    public static function crear_avance(){
+
+        if($_SERVER['REQUEST_METHOD'] === 'POST'){
+            $proyecto = Proyecto::where('id', $_POST['proyectoId']);
+            $avance = new Avance($_POST);
+            $avance->guardar();
+
+            header('location: /admin/proyecto?slug='. $proyecto->slug);
+        }
+        if($_SERVER['REQUEST_METHOD'] === 'POST'){
+
+            $slug = $_POST['slug'];
+
+            $proyecto = Proyecto::where('slug', $slug);
+            $proyectoId = $proyecto->id;
+
+            $avance = new Avance($_POST);
+            $avance->proyectoId = $proyectoId;
+            $resultado = $avance->guardar();
+
+            $respuesta = [
+                'tipo' => 'exito',
+                'mensaje' => 'Se agregó correctamente la tarea',
+                'resultado' => $resultado['resultado'],
+                'id' => $resultado['id'],
+                'proyectoId' => $proyectoId
+            ];
+
+            echo json_encode($respuesta);
+        }
+
+    }
 
     public static function APIIndexing(){
 

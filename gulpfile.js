@@ -56,13 +56,17 @@ function versionWebp( done ) {
 }
 
 function javascript( done ) {
-    src(paths.js)
+    /* src(paths.js)
         .pipe(sourcemaps.init())
         .pipe( terser() )
         .pipe(sourcemaps.write('.'))
         .pipe(dest('public/build/js'));
 
-    done();
+    done(); */
+    return src(paths.js)
+      .pipe(terser())
+      .pipe(sourcemaps.write('.'))
+      .pipe(dest('public/build/js'));
 }
 
 function dev( done ) {

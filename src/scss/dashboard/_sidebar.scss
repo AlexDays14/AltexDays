@@ -2,21 +2,42 @@
 @use 'base/mixins' as m;
 
 .sidebar{
-    height: 100vh;
+
     padding: 2rem 2.5rem;
+    background-color: v.$azul;
+    @media screen and (max-width:768px){
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
     @include m.tablet{
-        background-color: v.$azul;
+        min-height: 100vh;
+    }
+
+    .toggle{
+        font-size: 3rem;
+        cursor: pointer;
+        
+        i{
+            color: v.$blanco;
+        }
+        @include m.tablet{
+            display: none;   
+        }
     }
 
     .contenedor-sidebar{
 
         h2{
             text-align: center;
-            color: v.$blanco;
             font-weight: 700;
             font-size: 6rem;
             margin: 0;
             min-width: 20rem;
+
+            a{
+                color: v.$blanco;
+            }
         }
     }
 
@@ -24,19 +45,35 @@
         @media screen and (max-width:768px){
             position: fixed;
             width: 60%;
-            top: 6.3rem;
+            top: 10.9rem;
             right: 0;
             height: 100vh;
-            background-color: v.$azul;
+            background-color: v.$blanco;
             padding: 2.4rem;
             z-index: 10;
             transition: 300ms;
             border-top-left-radius: 1.6rem;
             display: flex;
             flex-direction: column;
+            border: 0.3rem solid v.$rojo;
             
             -webkit-transform: translateX(100%);
-            transform: translateX(0);
+            transform: translateX(100%);
+            .cerrar-sesion{
+                background-color: v.$azul;
+                color: v.$blanco;
+                text-decoration: none;
+                font-size: 1.6rem;
+                padding: 1rem;
+                border-radius: 0.7rem;
+                transition: 200ms;
+                text-align: center;
+                margin-top: 2rem;
+        
+                &:hover{
+                    background-color: darken(v.$azul, 10%);
+                }
+            }
         }
         
     
@@ -46,11 +83,14 @@
         }
         @include m.tablet{
             margin-top: 4.5rem;
+            .cerrar-sesion{
+                display: none;
+            }
         }
     
         a{
             margin-bottom: 2.1rem;
-            color: #fff;
+            color: v.$negro;
             /* background: linear-gradient(currentColor, currentColor);
             background-position: 50% 100%;
             background-repeat: no-repeat;
@@ -62,6 +102,10 @@
     
             &:hover, &.activo{
                 background-color: v.$rojo;
+                color: v.$blanco;
+            }
+            @include m.tablet{
+                color: #fff;
             }
         }
     }

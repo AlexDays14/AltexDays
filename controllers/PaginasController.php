@@ -44,14 +44,16 @@ class PaginasController{
     public static function portafolio(Router $router){
 
         $router->render('landing/portafolio', [
-            'home' => false
+            'home' => false,
+            'titulo' => 'Portafolio'
         ]);
     }
 
     public static function servicios(Router $router){
 
         $router->render('landing/servicios', [
-            'home' => false
+            'home' => false,
+            'titulo' => 'Servicios'
         ]);
     }
 

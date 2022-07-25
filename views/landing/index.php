@@ -12,6 +12,9 @@
                 <a href="#contacto" class="link">Contacto</a>
                 <a href="/portafolio" class="link">Portafolio</a>
                 <a href="/servicios" class="link">Servicios</a>
+                <?php if(isset($_SESSION['admin'])){ ?>
+                        <a href="/admin" class="link">Admin</a>
+                <?php } ?>
                 <?php if(!isset($_SESSION['login'])){?>
                     <a href="/login" class="log">Login</a>
                 <?php }else{ ?>
